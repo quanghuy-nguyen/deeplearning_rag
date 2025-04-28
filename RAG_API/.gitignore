@@ -1,0 +1,7 @@
+*.pyc
+*.env
+env/
+instruction.txt
+**/data/
+**/docs/
+**/all-mpnet-base-v2/
