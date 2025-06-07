@@ -45,7 +45,6 @@ class QuerryResponse:
 
 def query_rag(chat_history: List, query_text: str) -> QuerryResponse:
     db = get_chroma_db()
-    print(db)
     retriever = db.as_retriever(search_type="similarity", search_kwargs={"k":3})
     llm = ChatXAI(model="grok-2-1212")
 

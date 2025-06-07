@@ -26,7 +26,7 @@ if not os.path.exists(persist_dir):
         file_dir = os.path.join(docs_dir, doc_file)
         loader = PyPDFLoader(file_dir, extract_images=True)
         document = loader.load()
-        documents.extend(document)
+        documents.extend(document) # Using extend because document has already been a list
 
 
     print("Splitting text...")

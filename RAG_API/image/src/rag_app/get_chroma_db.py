@@ -27,7 +27,7 @@ def get_chroma_db():
     return CHROMA_DB_INSTANCE
     
 
-def copy_chroma_to_tmp():
+def copy_chroma_to_tmp(): # Chroma (using SQLite) always requires write access – even if you only want read access.
     runtime_chroma_path = get_runtime_chroma_path()
 
     if not os.path.exists(runtime_chroma_path):
