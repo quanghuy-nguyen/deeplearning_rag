@@ -1,4 +1,4 @@
-# Deep Learning RAG Agent
+# RAG System
 This project implements a simple Retrieval-Augmented Generation (RAG). This is a system which answers user questions based on context extracted from PDF documents. Combined document retrieval with language generation.
 
 ## 🔍 Key Techniques & Methods
